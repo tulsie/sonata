@@ -384,14 +384,6 @@ class LoadPageData extends AbstractFixture implements ContainerAwareInterface, O
     }
 
     /**
-     * @return \Faker\Generator
-     */
-    public function getFaker()
-    {
-        return $this->container->get('faker.generator');
-    }
-
-    /**
      * @return \Sonata\PageBundle\Entity\BlockInteractor
      */
     public function getBlockInteractor()
