@@ -98,7 +98,7 @@ class LoadPageData extends AbstractFixture implements ContainerAwareInterface, O
         $homepage->setEnabled(true);
         $homepage->setDecorate(0);
         $homepage->setRequestMethod('GET|POST|HEAD|DELETE|PUT');
-        $homepage->setTemplateCode('home_rh');
+        $homepage->setTemplateCode('tulsie_home');
         $homepage->setRouteName(PageInterface::PAGE_ROUTE_CMS_NAME);
         $homepage->setSite($site);
 
@@ -174,7 +174,7 @@ class LoadPageData extends AbstractFixture implements ContainerAwareInterface, O
         $page->setEnabled(true);
         $page->setDecorate(0);
         $page->setRequestMethod('GET|POST|HEAD|DELETE|PUT');
-        $page->setTemplateCode('default_rh');
+        $page->setTemplateCode('default');
         $page->setRouteName(PageInterface::PAGE_ROUTE_CMS_NAME);
         $page->setParent($this->getReference('page-homepage'));
         $page->setSite($site);
@@ -220,7 +220,7 @@ class LoadPageData extends AbstractFixture implements ContainerAwareInterface, O
         $page->setEnabled(true);
         $page->setDecorate(1);
         $page->setRequestMethod('GET|POST|HEAD|DELETE|PUT');
-        $page->setTemplateCode('default_rh');
+        $page->setTemplateCode('default');
         $page->setRouteName('_page_internal_error_not_found');
         $page->setSite($site);
 
@@ -261,7 +261,7 @@ class LoadPageData extends AbstractFixture implements ContainerAwareInterface, O
         $page->setEnabled(true);
         $page->setDecorate(1);
         $page->setRequestMethod('GET|POST|HEAD|DELETE|PUT');
-        $page->setTemplateCode('default_rh');
+        $page->setTemplateCode('default');
         $page->setRouteName('_page_internal_error_fatal');
         $page->setSite($site);
 
@@ -330,7 +330,7 @@ class LoadPageData extends AbstractFixture implements ContainerAwareInterface, O
         $headerMenu->addChildren($menu = $blockManager->create());
 
         $menu->setType('sonata.block.service.menu');
-        $menu->setSetting('menu_name', "RshPageBundle:Builder:mainMenu");
+        $menu->setSetting('menu_name', "TulsiePageBundle:Builder:mainMenu");
         $menu->setSetting('safe_labels', true);
         $menu->setPosition(1);
         $menu->setEnabled(true);
@@ -349,7 +349,7 @@ class LoadPageData extends AbstractFixture implements ContainerAwareInterface, O
         $footerMenuContainer->addChildren($footerMenu = $blockManager->create());
 
         $footerMenu->setType('sonata.block.service.menu');
-        $footerMenu->setSetting('menu_name', "RshPageBundle:Builder:footerMenu");
+        $footerMenu->setSetting('menu_name', "TulsiePageBundle:Builder:footerMenu");
         $footerMenu->setSetting('safe_labels', true);
         $footerMenu->setPosition(1);
         $footerMenu->setEnabled(true);

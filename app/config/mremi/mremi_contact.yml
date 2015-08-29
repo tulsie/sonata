@@ -1,0 +1,22 @@
+mremi_contact:
+    store_data:            false
+    contact_class:         Rsh\Bundle\ContactBundle\Model\Contact
+    form:
+        type:              rsh_contact
+        name:              contact_form
+        validation_groups: [Default]
+        subject_provider:  mremi_contact.subject_provider.noop
+
+    email:
+        mailer:            mremi_contact.mailer.twig_swift
+        from:
+            - { address: "info@tulsie.nl", name: "Site Mailer" }
+        recipient_address: "sramkisoensing@tulsie.nl"
+        template:        "RshContactBundle:Contact:email.txt.twig"
+
+rsh_contact:
+    email:
+        from:
+            - { address: "info@tulsie.nl", name: "Site Mailer" }
+        recipient_address: "sramkisoensing@tulsie.nl"
+        template:        "RshContactBundle:Contact:email.txt.twig"

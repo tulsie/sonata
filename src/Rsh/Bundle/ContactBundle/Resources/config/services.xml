@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+        <service id="mremi_contact.contact_manager.default" class="Rsh\Bundle\ContactBundle\Model\ContactManager" public="false">
+            <argument />
+        </service>
+
+        <service id="mremi_contact.mailer.twig_swift" class="Rsh\Bundle\ContactBundle\Mailer\TwigSwiftMailer" public="false">
+            <argument type="service" id="mailer" />
+            <argument type="service" id="twig" />
+            <argument />
+            <argument />
+            <argument />
+        </service>
+        <service id="mremi_contact.listener.email_confirmation" class="Rsh\Bundle\ContactBundle\EventListener\EmailConfirmationListener">
+            <tag name="kernel.event_subscriber" />
+
+            <argument type="service" id="mremi_contact.mailer" />
+            <argument type="service" id="router" />
+        </service>
+
+        <service id="rsh_contact.contact_manager" class="Rsh\Bundle\ContactBundle\Model\ContactManager">
+            <argument>Rsh\Bundle\ContactBundle\Model\Contact</argument>
+        </service>
+
+        <service id="rsh_contact.contact_form_type" class="Rsh\Bundle\ContactBundle\Form\Type\ContactType">
+            <tag name="form.type" alias="rsh_contact" />
+            <argument type="service" id="mremi_contact.subject_provider.noop" />
+            <argument>Rsh\Bundle\ContactBundle\Model\Contact</argument>
+            <argument />
+        </service>
+        <service id="mremi_contact.subject_provider.noop" class="Mremi\ContactBundle\Provider\NoopSubjectProvider">
+        </service>
+
+    </services>
+
+</container>

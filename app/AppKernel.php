@@ -35,7 +35,13 @@ class AppKernel extends Kernel
 
             new FOS\UserBundle\FOSUserBundle(),
             new Sonata\UserBundle\SonataUserBundle('FOSUserBundle'),
-            new Application\Sonata\UserBundle\ApplicationSonataUserBundle()
+            new Application\Sonata\UserBundle\ApplicationSonataUserBundle(),
+            new Tulsie\Bundle\PageBundle\TulsiePageBundle(),
+
+            // contact form bundles
+            new Elao\Bundle\FormTranslationBundle\ElaoFormTranslationBundle(),
+            new Mremi\ContactBundle\MremiContactBundle(),
+            new Rsh\Bundle\ContactBundle\RshContactBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
