@@ -1,4 +1,4 @@
-basic-sonata
+Tulsie site
 ============
 
 A Symfony project created on July 6, 2015, 7:50 pm.
@@ -11,7 +11,7 @@ A Symfony project created on July 6, 2015, 7:50 pm.
 To install this app do the following steps:
 
 ```bash
-git clone https://github.com/Richard-NL/sonata.git -b tulsie
+git clone https://github.com/tulsie/sonata.git
 ```
 
 Edit app/config/parameters to match your db settings
