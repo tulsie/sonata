@@ -10,8 +10,15 @@ A Symfony project created on July 6, 2015, 7:50 pm.
 ## Installation
 To install this app do the following steps:
 
+
 ```bash
 git clone https://github.com/tulsie/sonata.git
+```
+
+create a database
+```bash
+mysql
+> mysql create database
 ```
 
 Edit app/config/parameters to match your db settings
