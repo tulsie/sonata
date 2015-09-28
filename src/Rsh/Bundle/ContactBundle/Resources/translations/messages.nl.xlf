@@ -1,0 +1,164 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="mremi_contact.form_page_title">
+                <source>mremi_contact.form_page_title</source>
+                <target>Contact</target>
+            </trans-unit>
+            <trans-unit id="mremi_contact.form_title">
+                <source>mremi_contact.form_title</source>
+                <target>Contact form</target>
+            </trans-unit>
+            <trans-unit id="mremi_contact.form.title">
+                <source>mremi_contact.form.title</source>
+                <target>Titel</target>
+            </trans-unit>
+            <trans-unit id="mremi_contact.form.title_mr">
+                <source>mremi_contact.form.title_mr</source>
+                <target>Dhr.</target>
+            </trans-unit>
+            <trans-unit id="mremi_contact.form.title_mrs">
+                <source>mremi_contact.form.title_mrs</source>
+                <target>Mv.</target>
+            </trans-unit>
+            <trans-unit id="form.contact_form.children.name.label">
+                <source>form.contact_form.children.name.label</source>
+                <target>Naam</target>
+            </trans-unit>
+            <trans-unit id="mremi_contact.form.first_name">
+                <source>form.contact_form.children.firstName.label</source>
+                <target>Voornaam</target>
+            </trans-unit>
+            <trans-unit id="mremi_contact.form.last_name">
+                <source>form.contact_form.children.lastName.label</source>
+                <target>Achternaam</target>
+            </trans-unit>
+            <trans-unit id="mremi_contact.form.company.label">
+                <source>form.contact_form.children.company.label</source>
+                <target>Bedrijf</target>
+            </trans-unit>
+            <trans-unit id="form.contact_form.children.phone.label">
+                <source>form.contact_form.children.phone.label</source>
+                <target>Telefoonnummer</target>
+            </trans-unit>
+            <trans-unit id="mremi_contact.form.children.email.label">
+                <source>mremi_contact.form.email</source>
+                <target>Email</target>
+            </trans-unit>
+            <trans-unit id="form.contact_form.children.subject.label">
+                <source>form.contact_form.children.subject.label</source>
+                <target>Onderwerp</target>
+            </trans-unit>
+            <trans-unit id="form.contact_form.children.message.label">
+                <source>form.contact_form.children.message.label</source>
+                <target>Wat kunnen we voor u doen</target>
+            </trans-unit>
+            <trans-unit id="mremi_contact.form.captcha">
+                <source>mremi_contact.form.captcha</source>
+                <target>Security code</target>
+            </trans-unit>
+            <trans-unit id="form.contact_form.children.save.label">
+                <source>form.contact_form.children.save.label</source>
+                <target>Verstuur</target>
+            </trans-unit>
+            <trans-unit id="mremi_contact.form.children.email_message_txt">
+                <source>mremi_contact.email_message_txt</source>
+                <target><![CDATA[
+Een contact heeft een formulier verzonden:
+
+
+Voornaam: %firstname%
+
+Achternaam: %lastname%
+
+Bedrijf: %company%
+
+Telefoonnr: %phone%
+
+Email: %email%
+
+Bericht:
+%message%
+
+]]></target>
+            </trans-unit>
+            <trans-unit id="mremi_contact.email_message_html">
+                <source>mremi_contact.email_message_html</source>
+                <target><![CDATA[
+Een contact heeft een formulier verzonden:
+<br/>
+<br/>
+<strong><em>Voornaam:</em></strong> %firstName%
+<br/>
+<br/>
+<strong><em>Achternaam:</em></strong> %lastName%
+<br/>
+<br/>
+<strong><em>Bedrijf:</em></strong> %company%
+<br/>
+<br/>
+<strong><em>Telefoonnr:</em></strong> %phone%
+<br/>
+<br/>
+<strong><em>Email:</em></strong> %email%
+<br/>
+<br/>
+<strong><em>Bericht:</em></strong>
+<br/>
+%message%
+<br/>
+<br/>
+]]></target>
+            </trans-unit>
+            <trans-unit id="mremi_contact.confirm_page_title">
+                <source>mremi_contact.confirm_page_title</source>
+                <target>Bevestiging</target>
+            </trans-unit>
+            <trans-unit id="mremi_contact.confirm_title">
+                <source>mremi_contact.confirm_title</source>
+                <target>Bedankt dat u de tijd neemt om contact met ons op te nemen</target>
+            </trans-unit>
+            <trans-unit id="mremi_contact.confirm_message">
+                <source>mremi_contact.confirm_message</source>
+                <target>Uw bericht is verzonden en wij nemen zo spoedig mogelijk contact met u op.</target>
+            </trans-unit>
+
+
+            <trans-unit id="mremi_contact.firstName_placeholder">
+                <source>Enter first name</source>
+                <target>Uw voornaam</target>
+            </trans-unit>
+
+            <trans-unit id="mremi_contact.lastName_placeholder">
+                <source>Enter last name</source>
+                <target>Uw achternaam</target>
+            </trans-unit>
+
+            <trans-unit id="mremi_contact.company_placeholder">
+                <source>Enter company</source>
+                <target>Bedrijf</target>
+            </trans-unit>
+
+            <trans-unit id="mremi_contact.phone_placeholder">
+                <source>Enter phone number</source>
+                <target>Uw telefoonnummer</target>
+            </trans-unit>
+
+            <trans-unit id="mremi_contact.email_placeholder">
+                <source>Enter email</source>
+                <target>Uw email</target>
+            </trans-unit>
+
+            <trans-unit id="mremi_contact.subject_placeholder">
+                <source>Enter subject</source>
+                <target>Uw onderwerp</target>
+            </trans-unit>
+
+            <trans-unit id="mremi_contact.message_placeholder">
+                <source>Enter your message</source>
+                <target>Uw bericht</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

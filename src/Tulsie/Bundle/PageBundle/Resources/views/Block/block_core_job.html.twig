@@ -1,0 +1,8 @@
+{% for job in jobs %}
+    <div>
+        <strong><a href="#" rel="nofollow" title="{{ job.title }}">{{ job.title }}</a></strong>
+        <div>{{ job.description|raw }}</div>
+    </div>
+{% else %}
+    No jobs.
+{% endfor %}

@@ -1,0 +1,3 @@
+tulsie_page_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: TulsiePageBundle:Default:index }

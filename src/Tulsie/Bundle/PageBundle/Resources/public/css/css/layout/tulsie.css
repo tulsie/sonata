@@ -1,0 +1,118 @@
+#footer-nav dl {
+    width:100%;
+    overflow:hidden;
+}
+.container dt, .container dd {
+    float:left;
+    margin-bottom: 25px;
+}
+.container dt {width: 5%}
+.container dd {width: 95%}
+
+#footer-nav {
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+    color:#000;
+}
+
+#footer-nav a {
+    padding-top:5px;
+    padding-bottom:5px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+#footer-nav li {
+    float: none;
+    display: inline-block;
+}
+
+@media (max-width: 480px) {
+    #footer-nav {
+        width: auto;
+    }
+
+    #footer-nav li {
+        float: none;
+        display: block;
+    }
+
+    .container dt {width: 10%}
+    .container dd {width: 90%}
+}
+/* Small devices (tablets, 768px and up) */
+/* Medium devices (desktops, 992px and up) */
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 1025px) {
+    #footer-nav li {
+        float: none;
+        display: inline-block;
+    }
+}
+a.anchor{display: block; position: relative; top: -125px; visibility: hidden;}
+
+footer#main-footer {
+    background-color: #fff;
+    color: #555
+}
+
+footer#main-footer a {
+    /*color: #FFFFFF;*/
+}
+
+footer#main-footer ul.nav a:hover {
+    color: #555;
+    background-color: #FFFFFF;
+}
+footer#main-footer #footer-rights {
+    background-color: #D7AF5A;
+    color: #fff
+}
+footer#main-footer #footer-rights .row {
+    margin-top: 14px;
+}
+
+/*footer#main-footer #footer-rights a {*/
+    /*color:#1e1e1b;*/
+/*}*/
+
+/*footer#main-footer.dark-color, footer#main-footer #footer-rights.dark-color {*/
+    /*background-color: #111;*/
+    /*color: #fcfcfc*/
+/*}*/
+
+/*footer#main-footer.light-color, footer#main-footer #footer-rights.light-color {*/
+    /*background-color: #fff;*/
+    /*color: #222*/
+/*}*/
+
+/*footer#main-footer.light-color a:hover, footer#main-footer #footer-rights.light-color a:hover {*/
+    /*color: #3c3c3c*/
+/*}*/
+
+/*footer#main-footer.dark-main-color, footer#main-footer #footer-rights.dark-main-color {*/
+    /*background-color: #998356;*/
+    /*color: #fff*/
+/*}*/
+
+/*footer#main-footer.main-color, footer#main-footer #footer-rights.main-color {*/
+    /*background-color: #b39964;*/
+    /*color: #fff*/
+/*}*/
+
+/*footer#main-footer.light-main-color, footer#main-footer #footer-rights.light-main-color {*/
+    /*background-color: #c8ae7a;*/
+    /*color: #fff*/
+/*}*/
+
+/*footer#main-footer ul.border li {*/
+    /*border-bottom-color: #151515*/
+/*}*/
+
+/***/
+ /** Footer overrides*/
+ /**/
+/*#main-footer > div.container > div > div > div > address > p > a {*/
+    /*color:#555;*/
+/*}*/

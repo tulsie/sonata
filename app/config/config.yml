@@ -2,6 +2,8 @@ imports:
     - { resource: parameters.yml }
     - { resource: security.yml }
     - { resource: services.yml }
+    # meremi Contact
+    - { resource: mremi/mremi_contact.yml }
 
     - { resource: sonata/main.yml }
 

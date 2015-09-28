@@ -1,0 +1,4 @@
+services:
+#    tulsie_page.example:
+#        class: Tulsie\Bundle\PageBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

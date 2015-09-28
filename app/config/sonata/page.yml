@@ -10,37 +10,62 @@ cmf_routing:
 
 sonata_page:
     templates:
-        default:
-            path: 'ApplicationSonataPageBundle::demo_layout.html.twig'
-            name: 'default'
+        tulsie_home:
+            path: 'TulsiePageBundle::tulsie_home.html.twig'
+            name: 'tulsie home'
             containers:
-                header:
-                    name: Header
-                content_top:
-                    name: Top content
-                content:
-                    name: Main content
-                content_bottom:
-                    name: Bottom content
-                footer:
-                    name: Footer
+                 header:
+                     name: Header
+                 content_top:
+                     name: Top content
+                 content:
+                     name: Main content
+                 content_bottom:
+                     name: Bottom content
+                 footer:
+                     name: Footer
             matrix:
-                layout: |
-                    HHHHHHHH
-                    TTTTBBBB
-                    TTTTBBBB
-                    TTTTBBBB
-                    TTTTBBBB
-                    CCCCCCCC
-                    CCCCCCCC
-                    FFFFFFFF
+                 layout: |
+                     HHHHHHHH
+                     TTTTTTTT
+                     CCCCCCCC
+                     BBBBBBBB
+                     FFFFFFFF
 
-                mapping:
-                    H: header
-                    T: content_top
-                    C: content
-                    B: content_bottom
-                    F: footer
+                 mapping:
+                     H: header
+                     T: content_top
+                     C: content
+                     B: content_bottom
+                     F: footer
+        default:
+            path: 'TulsiePageBundle::tulsie_layout.html.twig'
+            name: 'tulsie default'
+            containers:
+                 header:
+                     name: Header
+                 content_top:
+                     name: Top content
+                 content:
+                     name: Main content
+                 content_bottom:
+                     name: Bottom content
+                 footer:
+                     name: Footer
+            matrix:
+                 layout: |
+                     HHHHHHHH
+                     TTTTTTTT
+                     CCCCCCCC
+                     BBBBBBBB
+                     FFFFFFFF
+
+                 mapping:
+                     H: header
+                     T: content_top
+                     C: content
+                     B: content_bottom
+                     F: footer
     multisite: host
     use_streamed_response: true # set the value to false in debug mode or if the reverse proxy does not handle streamed response
     ignore_route_patterns:

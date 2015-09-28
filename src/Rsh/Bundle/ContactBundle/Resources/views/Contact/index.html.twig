@@ -1,0 +1,64 @@
+{% form_theme form 'RshContactBundle:Form:fields.html.twig' %}
+{% trans_default_domain 'messages' %}
+{#{% form_theme form 'RshPageBundle:Form:fields.html.twig' %}#}
+
+
+
+<header class="page-header large image-background image-16 text-light no-padding">
+    <div class="mask opacity-2">
+        <div class="container v-align-center">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 class="large">meer weten?</h1>
+                    <h2 class="no-mb"> maak een belafspraak of neem direct</h2>
+                    <h2 class="no-mt mb-small">contact op via 010 7951647</h2><br>
+                    <h2 class="no-mt mb-small">we horen graag van u</h2>
+                </div>
+                <div class="col-md-6"></div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- form-->
+<section class="pt-medium pb-medium">
+    <div class="container">
+        <div class="col-md-12 box padding-medium clearfix light-color">
+            <div class="row">
+
+
+                <div class="col-md-6" >
+                    <section>
+                        <h3>Tulsie BV</h3>
+                        <address>
+                            <p>
+                                Scheepvaartkwartier <br>
+                                Vasteland 78<br>
+                                3011 BN Rotterdam<br>
+                                +31 (0)10-7951647 <br>
+                                <a href="mailto:talentacquisition@tulsie.nl">talentacquisition@tulsie.nl</a>
+                            </p>
+                        </address>
+                    </section>
+                </div>
+                <div class="col-md-5">
+
+                    {{ form_start(form, {'action': path('mremi_contact_form'), 'attr': {'novalidate': 'novalidate', 'class': 'mb15 pb40 form-minimal'}}) }}
+                    {{ form_row(form.firstName, { 'attr':{'placeholder':'Enter first name'|trans} }) }}
+                    {{ form_row(form.lastName, { 'attr':{'placeholder':'Enter last name'|trans} }) }}
+                    {{ form_row(form.company, { 'attr':{'placeholder':'Enter company'|trans} }) }}
+                    {{ form_row(form.phone, { 'attr':{'placeholder':'Enter phone number'|trans} }) }}
+                    {{ form_row(form.email, { 'attr':{'placeholder':'Enter email'|trans} }) }}
+                    {{ form_row(form.message, { 'attr':{'placeholder':'Enter your message'|trans, 'cols': 3, 'rows': 5} }) }}
+                    {{ form_row(form.save, { 'attr':{'class': 'btn default large border black'} }) }}
+
+                    {{ form_errors(form) }}
+                    {{ form_end(form) }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- google maps render container -->
+<div id="map-wrapper" class="large dark"></div>
+
+<!-- / form -->

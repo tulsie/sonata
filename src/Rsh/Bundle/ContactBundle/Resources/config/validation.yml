@@ -1,0 +1,25 @@
+Rsh\Bundle\ContactBundle\Model\Contact:
+    properties:
+        firstName:
+            - NotBlank: ~
+            - Length:
+                min: 3
+                max: 255
+        lastName:
+            - NotBlank: ~
+            - Length:
+                min: 3
+                max: 255
+        phone:
+            - Regex:
+                pattern: '/\d/'
+
+        email:
+            - NotBlank: ~
+            - Email:
+                checkMX: true
+        message:
+            - NotBlank: ~
+            - Length:
+                min: 3
+                max: 255

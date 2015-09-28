@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="ie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 10)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+    {% include 'TulsiePageBundle::head_meta.html.twig' %}
+    {% include 'TulsiePageBundle::head_stylesheets.html.twig' %}
+    {% include 'TulsiePageBundle::head_scripts.html.twig' %}
+
+</head>
+<body class="activate-appear-animation header-6 parallaxed-footer">
+{% include 'TulsiePageBundle::gtm.html.twig' %}
+<div id="preloader" class="v-align-translate">
+    <div class="neko-preloader"></div>
+</div>
+<!-- global-wrapper -->
+<div id="global-wrapper">
+
+    {% include 'TulsiePageBundle::header.html.twig' %}
+
+    <main id="content">
+
+        {#{% if page.name != 'global'%}#}
+        {#{{ sonata_page_render_container('content_top', 'global') }}#}
+        {#{% endif %}#}
+        {{ sonata_page_render_container('content_top', page) }}
+
+        {% block page_content %}
+            {% if content is defined %}
+                {{ content|raw }}
+            {% else %}
+                {% set content = block('content') %}
+                {% if content|length > 0 %}
+                    {{ content|raw }}
+                {% elseif page is defined %}
+                    {{ sonata_page_render_container('content', page) }}
+                {% endif %}
+            {% endif %}
+        {% endblock %}
+
+
+    </main>
+    <!-- / content -->
+
+
+
+
+
+
+</div>
+<!-- global wrapper -->
+
+{% include 'TulsiePageBundle::footer.html.twig' %}
+<!-- End Document ================================================== -->
+
+{% include 'TulsiePageBundle::bottom_scripts.html.twig' %}
+</body>
+</html>
