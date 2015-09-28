@@ -15,11 +15,6 @@ To install this app do the following steps:
 git clone https://github.com/tulsie/sonata.git
 ```
 
-create a database
-```bash
-mysql
-> mysql create database
-```
 
 Edit app/config/parameters to match your db settings
 
